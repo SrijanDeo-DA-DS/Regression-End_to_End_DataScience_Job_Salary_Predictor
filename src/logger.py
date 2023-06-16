@@ -2,6 +2,9 @@ import logging
 import os
 from datetime import datetime
 
+path = 'C:/Users/srija/Documents/DS_Job_Salary_Predictor/'
+os.chdir(path)
+
 LOG_FILE=f"{datetime.now().strftime('%m_%d_%Y_%H_%M_%S')}.log"
 logs_path=os.path.join(os.getcwd(),"logs",LOG_FILE)
 os.makedirs(logs_path,exist_ok=True)
