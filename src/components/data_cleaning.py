@@ -11,13 +11,13 @@ df_train = pd.read_csv('C:/Users/srija/Documents/DS_Job_Salary_Predictor/data/tr
 
 def title_simplifier(title):
     if 'data scientist' in title.lower():
-        return 'data scientist'
+        return 'data_scientist'
     elif 'data engineer' in title.lower():
-        return 'data engineer'
+        return 'data_engineer'
     elif 'analyst' or 'analytics' or 'business' or 'intelligence' in title.lower():
-        return 'data analyst'
+        return 'data_analyst'
     elif 'machine learning' in title.lower():
-        return 'machine learning engg'
+        return 'machine_learning_engg'
     else:
         return 'na'
     
@@ -109,3 +109,4 @@ df_train.drop(df_train[df_train['Revenue']=='-1'].index,inplace=True)
 df_train.drop(['S.no','Job Title', 'Salary Estimate', 'Job Description', 'Company Name', 'Location', 'Headquarters',
               'Founded', 'Competitors','hourly', 'employer_provided', 'min_salary', 'max_salary'],axis=1,inplace=True)
 
+df_train.to_csv('C:/Users/srija/Documents/DS_Job_Salary_Predictor/data/clean_data.csv',index=False)

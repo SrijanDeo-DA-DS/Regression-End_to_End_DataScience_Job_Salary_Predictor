@@ -1,0 +1,127 @@
+<html>
+<body>
+    <div class="login">
+       <h1>Predict your next Data Science job Salary</h1>
+   
+       <form action="{{ url_for('predict')}}" method="post">
+        <h1>
+            <legend>Salary Predictor</legend>
+        </h1>
+        <div class="mb-3">
+            <label class="form-label">job_state</label>
+            <select class="form-control" name="job_state" placeholder="Enter job_state" required>
+                <option class="placeholder" selected disabled value="">job_state</option>
+                <option value="CA">
+                    CA
+                </option>
+                <option value="MA">
+                    MA
+                </option>
+                <option value="NY">
+                    NY
+                </option>
+            </select>
+        </div>
+        <div class="mb-3">
+            <label class="form-label">job_headquarters</label>
+            <select class="form-control" name="job_headquarters"
+                placeholder="job_headquarters" required>
+                <option class="placeholder" selected disabled value="">job_headquarters</option>
+                <option value="CA">
+                    CA
+                </option>
+                <option value="MA">
+                    MA
+                </option>
+                <option value="NY">
+                    NY
+                </option>
+            </select>
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Job Seniority</label>
+            <select class="form-control" name="Job Seniority" placeholder="Job Seniority"
+                required>
+                <option class="placeholder" selected disabled value="">Job Seniority</option>
+                <option value="na">
+                    na
+                </option>
+                <option value="senior">
+                    senior
+                </option>
+                <option value="director">
+                    director
+                </option>
+                <option value="manager">
+                    manager
+                </option>
+                <option value="jr">
+                    jr
+                </option>
+            </select>
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Job Title simp</label>
+            <select class="form-control" name="Job Title simp" placeholder="Job Title simp"
+                required>
+                <option class="placeholder" selected disabled value="">Job Title simp</option>
+                <option value="data analyst">
+                    data analyst
+                </option>
+                <option value="data scientist">
+                    data scientist
+                </option>
+                <option value="data engineer">
+                    data engineer
+                </option>
+            </select>
+        </div>
+        <div class="mb-3">
+            <label class="form-label">excel</label>
+            <input class="form-control" type="number" name="excel"
+                placeholder="Enter your Rating" min='0' max='1' />
+        </div>
+        <div class="mb-3">
+            <label class="form-label">aws</label>
+            <input class="form-control" type="number" name="aws"
+                placeholder="Enter your Rating" min='0' max='1' />
+        </div>
+        <div class="mb-3">
+            <label class="form-label">spark</label>
+            <input class="form-control" type="number" name="spark"
+                placeholder="Enter your Rating" min='0' max='1' />
+        </div>
+        <div class="mb-3">
+            <label class="form-label">R_yn</label>
+            <input class="form-control" type="number" name="R_yn"
+                placeholder="Enter your Rating" min='0' max='1' />
+        </div>
+        <div class="mb-3">
+            <label class="form-label">python_yn</label>
+            <input class="form-control" type="number" name="python_yn"
+                placeholder="Enter your Rating" min='0' max='1' />
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Easy_Apply</label>
+            <input class="form-control" type="number" name="Easy_Apply"
+                placeholder="Enter your Rating" min='0' max='1' />
+        </div>
+        <div class="mb-3">
+            <label class="form-label">age_of_company</label>
+            <input class="form-control" type="number" name="age_of_company"
+                placeholder="Enter age of company" min='0' max='100' />
+        </div>
+        <div class="mb-3">
+            <label class="form-label">num_comp</label>
+            <input class="form-control" type="number" name="num_comp"
+                placeholder="Enter num_comp" min='0' max='10' />
+        </div>
+        <div class="mb-3">
+            <input class="btn btn-primary" type="submit" value="Predict your Salary" required />
+        </div>
+    </form>
+    <h2>
+       THE  prediction is {{results}}
+    </h2>
+   <body>
+</html>
