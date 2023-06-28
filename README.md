@@ -40,12 +40,12 @@ After scraping the data, I needed to clean it up so that it was usable for our m
 * Cleaned up company state and headquarters
 * Transformed founded date into age of company
 * Made columns for if different skills were listed in the job description:
-1. Python
-2. R
-3. Excel
-4. AWS
-5. Spark
-6. Column for simplified job title and Seniority
+    1. Python
+    2. R
+    3. Excel
+    4. AWS
+    5. Spark
+    6. Column for simplified job title and Seniority
 
 ## EDA
 I looked at the distributions of the data and the value counts for the various categorical variables. Below are a few highlights from the pivot tables.
