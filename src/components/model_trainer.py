@@ -45,6 +45,7 @@ models = {
 }
 model_list = []
 r2_list =[]
+mae_list = []
 
 for i in range(len(list(models))):
     model = list(models.values())[i]
@@ -75,11 +76,12 @@ for i in range(len(list(models))):
     print("- Mean Absolute Error: {:.4f}".format(model_test_mae))
     print("- R2 Score: {:.4f}".format(model_test_r2))
     r2_list.append(model_test_r2)
+    mae_list.append(model_test_mae)
     
     print('='*35)
     print('\n')
 
-abc = pd.DataFrame(list(zip(model_list, r2_list)), columns=['Model Name', 'R2_Score']).sort_values(by=["R2_Score"],ascending=False)
+abc = pd.DataFrame(list(zip(model_list, r2_list, mae_list)), columns=['Model Name', 'R2_Score', 'Mean Absolute Error']).sort_values(by=["R2_Score"],ascending=False)
 pred_df=pd.DataFrame({'Actual Value':y_test,'Predicted Value':y_test_pred,'Difference':y_test-y_test_pred})
 
 
