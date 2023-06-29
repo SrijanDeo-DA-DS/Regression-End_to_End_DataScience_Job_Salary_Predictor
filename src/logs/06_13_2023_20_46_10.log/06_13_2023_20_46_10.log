@@ -1,0 +1,13 @@
+[ 2023-06-13 20:46:18,137 ] 25 root - INFO - Data Validation started
+[ 2023-06-13 20:46:18,174 ] 35 root - INFO - Incorrect data
+[ 2023-06-13 20:46:18,177 ] 38 root - INFO - Incorrect filename
+[ 2023-06-13 20:46:58,466 ] 25 root - INFO - Data Validation started
+[ 2023-06-13 20:46:58,500 ] 35 root - INFO - Incorrect data
+[ 2023-06-13 20:46:58,503 ] 38 root - INFO - Incorrect filename
+[ 2023-06-13 20:56:23,367 ] 25 root - INFO - Data Validation started
+[ 2023-06-13 21:04:59,544 ] 15 root - INFO - Train Test split started
+[ 2023-06-13 21:04:59,670 ] 24 root - INFO - Train test split completed
+[ 2023-06-13 21:05:27,889 ] 25 root - INFO - Data Validation started
+[ 2023-06-13 21:09:11,759 ] 25 root - INFO - Data Validation started
+[ 2023-06-13 21:09:41,388 ] 15 root - INFO - Train Test split started
+[ 2023-06-13 21:09:41,495 ] 24 root - INFO - Train test split completed
