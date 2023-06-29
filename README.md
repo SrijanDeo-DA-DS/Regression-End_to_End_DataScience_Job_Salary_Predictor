@@ -12,6 +12,14 @@
 * For Web Framework Requirements: pip install -r requirements.txt
 * Scraper Github: https://github.com/arapfaik/scraping-glassdoor-selenium
 
+## Data Validation
+* I used python scripts to validate the raw data sent by client.
+* This is done by verifying the name of file and number of columns in the file. More such checks can be added if needed
+
+## Data Logging and Custom Exception handling
+* Every step is logged and a separate folder is created for logging. Such process can help identify problems in the code
+* Every error is logged in the logger file with a Custom Error Handling exception message
+
 ## Web Scraping
 Tweaked the web scraper github repo (above) to scrape 1000 job postings from glassdoor.com. With each job, we got the following:
 
