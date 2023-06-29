@@ -7,3 +7,5 @@ wordcloud
 jsonify
 requests
 flask
+xgboost
+catboost
