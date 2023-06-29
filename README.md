@@ -80,9 +80,10 @@ I tried different models and evaluated them using Mean Absolute Error. I chose M
 
 FInally, I decided to use Random Forest Regressor
 
-## Productionize the model
-Coming soon...
 ## Front End API
 ![Front-end-2](https://github.com/SrijanDeo-DA-DS/DataScience_Job_Salary_Predictor/assets/88278620/cddc56ae-579f-4305-ad7c-d11454d387b0)
 ![Front-end-1](https://github.com/SrijanDeo-DA-DS/DataScience_Job_Salary_Predictor/assets/88278620/ce5df099-7c75-4176-83b5-6f9ba2baf78e)
 
+
+## Productionize the model
+Coming soon...
