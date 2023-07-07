@@ -15,7 +15,7 @@
 ## Data Validation
 * I used python scripts to validate the raw data sent by client.
 * This is done by verifying the __Name of File__ and __Number of Columns__ in the file. More such checks can be added if needed
-* Data that doesn't pass the validation check goes to folder : bad_data_archived while data that passes all checks goes to : good_data
+* Data that doesn't pass the validation check goes to __folder__ : bad_data_archived , while data that passes all checks goes to __folder__ : good_data
 
 ## Data Logging and Custom Exception handling
 * Every step is logged and a separate folder is created for logging. Such process can help identify problems in the code
