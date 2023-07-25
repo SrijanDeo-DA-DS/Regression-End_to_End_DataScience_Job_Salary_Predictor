@@ -7,10 +7,14 @@
 * Built a client facing API using flask (CLient/End-User can use Front End UI and/or shared drive location to put theor test data)
 
 ## Code and Resources Used
-* Python Version: 3.7
+* Python Version: 3.11
 * Packages: pandas, numpy, sklearn, matplotlib, seaborn, selenium, flask, json, pickle
 * For Web Framework Requirements: pip install -r requirements.txt
 * Scraper Github: https://github.com/arapfaik/scraping-glassdoor-selenium
+
+## Data Ingestion
+* Client can use a Front End website to enter customer data to predict churn
+* Client can also use a shared drive location to put the raw bulk data. The Machine Learning Pipeline would automatically run the pre-processing tasks and give the ouput in a shared location.
 
 ## Data Validation
 * I used python scripts to validate the raw data sent by client.
@@ -59,7 +63,7 @@ After scraping the data, I needed to clean it up so that it was usable for our m
     6. Column for simplified job title and Seniority
 
 ## EDA
-I looked at the distributions of the data and the value counts for the various categorical variables. Below are a few highlights from the pivot tables.
+I looked at the distributions of the data and the value counts for the various categorical variables. Below are a few highlights
 
 * Count of Job vs State 
 # ![Count of job vs state](https://github.com/SrijanDeo-DA-DS/DataScience_Job_Salary_Predictor/assets/88278620/f3c0c267-c3b0-41e6-97da-325c7b955d3b)
